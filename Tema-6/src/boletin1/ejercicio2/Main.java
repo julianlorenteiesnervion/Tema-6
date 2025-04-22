@@ -17,7 +17,6 @@ public class Main {
 				contador++;
 			}
 			
-			
 			System.out.println("Suma: " + suma + "\nMedia: " + suma / contador);
 			
 		} catch (FileNotFoundException e) {
