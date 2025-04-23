@@ -17,7 +17,7 @@ public class Main {
 		String entrada;
 
 		// Try-catch para el writer
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(FICHERO))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(FICHERO, true))) {
 			// Preguntamos por la cadena
 			System.out.print("Introduce texto: ");
 			entrada = reader.nextLine();
