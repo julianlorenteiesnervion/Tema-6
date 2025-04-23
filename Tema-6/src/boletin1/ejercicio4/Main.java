@@ -37,6 +37,8 @@ public class Main {
 			System.err.println("Archivo no encontrado.");
 		}
 		
+		reader.close();
+		
 	}
 
 }
