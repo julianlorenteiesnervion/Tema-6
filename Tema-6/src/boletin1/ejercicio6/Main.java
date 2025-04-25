@@ -7,24 +7,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		
+		// Ficheros
 		final String DESORDENADO = "src\\boletin1\\ejercicio6\\Desordenados.txt";
 		final String ORDENADO = "src\\boletin1\\ejercicio6\\Ordenados.txt";
 		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(ORDENADO, true))) {
-			try (BufferedReader br = new BufferedReader(new FileReader(DESORDENADO))) {
+		// Writer
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(ORDENADO)); BufferedReader br = new BufferedReader(new FileReader(DESORDENADO))) {
+				// Lista de números
 				List<Integer> lista = new ArrayList<>();
 				
 				String linea;
 				
+				// Leer y guardar en la lista los números
 				while ((linea = br.readLine()) != null) {
 					lista.add(Integer.parseInt(linea));
 				}
-				System.out.println(lista);
 				
-				Collections.sort(lista);
+				Collections.sort(lista); // Ordenamos la lista
 				
-				System.out.println(lista);
+				// Escribir en "Ordenados.txt" la lista ordenada
+				for (int num : lista) {
+					bw.write(String.valueOf(num));
+					bw.newLine();
 			}
 		} catch (IOException e) {
 			System.err.println(e);
