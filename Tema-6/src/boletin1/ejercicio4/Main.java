@@ -20,10 +20,9 @@ public class Main {
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(FICHERO, true))) {
 			// Preguntamos por la cadena
 			System.out.print("Introduce texto: ");
-			entrada = reader.nextLine();
 			
 			// Mientras no sea "fin"
-			while (!entrada.toLowerCase().equals("fin")) {
+			while (!(entrada = reader.nextLine()).toLowerCase().equals("fin")) {
 				
 				// Escribimos y añadimos una nueva línea
 				bw.write(entrada);
@@ -31,7 +30,6 @@ public class Main {
 				
 				// Volvemos a preguntar
 				System.out.print("Introduce texto: ");
-				entrada = reader.nextLine();
 			}
 		} catch (IOException e) { // Lanzamos excepción si no se encuentra
 			System.err.println("Archivo no encontrado.");
