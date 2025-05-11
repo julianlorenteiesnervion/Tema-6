@@ -8,8 +8,8 @@ public class Main {
 	public static void main(String[] args) {
 		
 		// Ficheros
-		final String DESORDENADO = "src\\boletin1\\ejercicio6\\Desordenados.txt";
-		final String ORDENADO = "src\\boletin1\\ejercicio6\\Ordenados.txt";
+		final String DESORDENADO = "Tema-6\\src\\boletin1\\ejercicio6\\Desordenados.txt";
+		final String ORDENADO = "Tema-6\\src\\boletin1\\ejercicio6\\Ordenados.txt";
 		
 		// Writer
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(ORDENADO)); BufferedReader br = new BufferedReader(new FileReader(DESORDENADO))) {

@@ -11,7 +11,7 @@ public class Main {
 		double suma = 0;
 		double contador = 0;
 		
-		try (Scanner sc = new Scanner(new FileReader("src\\boletin1\\ejercicio1\\NumerosReales.txt"))) {
+		try (Scanner sc = new Scanner(new FileReader("Tema-6\\src\\boletin1\\ejercicio1\\NumerosReales.txt"))) {
 			
 			// Mientras haya un siguiente número...
 			while (sc.hasNextDouble()) {

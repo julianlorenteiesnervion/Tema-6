@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter("src\\boletin1\\ejercicio5\\datos.txt", true))) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("Tema-6\\src\\boletin1\\ejercicio5\\datos.txt", true))) {
 			Scanner reader = new Scanner(System.in);
 			
 			System.out.print("Nombre: ");

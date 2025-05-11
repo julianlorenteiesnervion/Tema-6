@@ -11,7 +11,7 @@ public class Main {
 		Scanner reader = new Scanner(System.in);
 
 		// Constante con la dirección relativa del fichero
-		final String FICHERO = "src\\boletin1\\ejercicio4\\Cadenas.txt";
+		final String FICHERO = "Tema-6\\src\\boletin1\\ejercicio4\\Cadenas.txt";
 		
 		// Entrada del usuario
 		String entrada;

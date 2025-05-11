@@ -10,7 +10,7 @@ public class Main {
 		int suma = 0;
 		int contador = 0;
 		
-		try (Scanner sc = new Scanner(new FileReader("src\\boletin1\\ejercicio2\\Enteros.txt"))) {
+		try (Scanner sc = new Scanner(new FileReader("Tema-6\\src\\boletin1\\ejercicio2\\Enteros.txt"))) {
 			
 			while (sc.hasNextInt()) {
 				suma += sc.nextInt();

@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		final String FICHERO = "src\\boletin2\\ejercicio1\\carta.txt";
+		final String FICHERO = "Tema-6\\src\\boletin2\\ejercicio1\\carta.txt";
         int numCaracteres = 0;
         int numLineas = 0;
         int numPalabras = 0;

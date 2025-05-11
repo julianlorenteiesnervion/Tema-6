@@ -15,7 +15,7 @@ public class Main {
 		double sumaAltura = 0;
 		int contador = 0;
 		
-		try (Scanner sc = new Scanner(new FileReader("src\\boletin1\\ejercicio3\\Alumnos.txt"))) {
+		try (Scanner sc = new Scanner(new FileReader("Tema-6\\src\\boletin1\\ejercicio3\\Alumnos.txt"))) {
 			while (sc.hasNextLine()) {
 				int i = 1;
 				
